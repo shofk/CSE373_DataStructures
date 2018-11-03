@@ -204,7 +204,7 @@ public class ArrayDictionary<K, V> implements IDictionary<K, V> {
          * Sets a new value
          * @param value new value to be set
          */
-        public void setValue(V value) { //what this for?
+        public void setValue(V value) {
             this.value = value;
         }
     }
