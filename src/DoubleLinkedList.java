@@ -13,9 +13,6 @@ import java.util.NoSuchElementException;
  * @param <T> Generic type
  */
 public class DoubleLinkedList<T> implements IList<T> {
-    // You may not rename these fields or change their types.
-    // We will be inspecting these in our private tests.
-    // You also may not add any additional fields.
     /** First node of the list */
     private Node<T> front;
     

@@ -11,11 +11,9 @@ import misc.exceptions.NoSuchKeyException;
  * @param <V> Generic type for value
  */
 public class ArrayDictionary<K, V> implements IDictionary<K, V> {
-    // You may not change or rename this field: we will be inspecting
-    // it using our private tests.
+    /** keeps the pairs */
     private Pair<K, V>[] pairs;
 
-    // You're encouraged to add extra fields (and helper methods) though!
     /** size of the array */
     private int arraySize;
     
@@ -40,16 +38,6 @@ public class ArrayDictionary<K, V> implements IDictionary<K, V> {
      */
     @SuppressWarnings("unchecked")
     private Pair<K, V>[] makeArrayOfPairs(int size) {
-        // It turns out that creating arrays of generic objects in Java
-        // is complicated due to something known as 'type erasure'.
-        //
-        // We've given you this helper method to help simplify this part of
-        // your assignment. Use this helper method as appropriate when
-        // implementing the rest of this class.
-        //
-        // You are not required to understand how this method works, what
-        // type erasure is, or how arrays and generics interact. Do not
-        // modify this method in any way.
         return (Pair<K, V>[]) (new Pair[size]);
 
     }
